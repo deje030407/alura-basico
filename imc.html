@@ -1,0 +1,77 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULO IMC</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	};  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	};
+
+	function mostrar(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	/*function calcularImc(peso,altura, nombre) {
+		imc = peso / (altura * altura);
+		imprimir("El IMC calcuado de " + nombre + " es: " + imc)
+	};
+
+	//var pesoJean = 71;
+	//var alturaJean = 1.72;
+	//var imcJean = pesoJean / (alturaJean * alturaJean);
+
+	//var imcJean = calcularImc(pesoJean,alturaJean);
+
+	//imprimir("El IMC de Jean es: " + imcJean);
+
+	//var pesoFelipe = 75;
+	//var alturaFelipe = 1.73;
+	//var imcFelipe = pesoFelipe / (alturaFelipe * alturaFelipe);
+	//var imcFelipe = calcularImc(pesoFelipe,alturaFelipe);
+	//imprimir("El IMC de Felipe es: " + imcFelipe);
+
+	calcularImc(71, 1.72, "Jean");
+	calcularImc(75, 1.73, "Felipe");
+	
+
+	function calcularImc(peso, altura) {
+		imc = peso / (altura * altura)
+		return imc;
+	}
+
+	var imcJean = calcularImc(71,1.72);
+	var imcFelipe = calcularImc(72,1.75);
+
+	imprimir("El promedio de IMC de Jean y Felipe es: " + (imcJean + imcFelipe) / 2 );
+	*/
+
+	function a(numero1, numero2){
+		return numero1 + numero2;
+	};
+
+	function b(numero1, numero2){
+		return numero1 / numero2;
+	};
+
+	var resultado = a(10,20) + b(30,2);
+
+	mostrar(resultado);
+
+</script>
+
+
