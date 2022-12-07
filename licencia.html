@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE LICENCIA</h1>
+<script>
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	};  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	};
+	
+	var nombre = prompt("Ingrese el nombre")
+	var edad = parseInt(prompt("Ingrese la Edad"));
+	var tieneLicencia = prompt("¿Tiene licencia? Responde S o N");
+
+	if (edad >= 18) {
+		if (tieneLicencia == "S") {
+			imprimir(nombre + " Puede conducir tiene " + edad + " años");
+		}
+	}
+
+	else {
+		imprimir(nombre + " No puede conducir es menor de edad tiene o no tiene licencia");
+	};
+		
+</script>
+
+
