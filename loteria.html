@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE LOTERIA</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	};  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	};
+
+	function bingo(n){
+		return Math.round(Math.random() * n);
+	};
+
+	var numeroPensado = bingo(10);
+	
+	var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+	if (numeroPensado == numeroLanzado) {
+		imprimir("Usted acerto");
+	}
+
+	else {
+		if (numeroLanzado > numeroPensado) {
+			imprimir("Usted erró, el numero pensado era menor que tu numero " + numeroPensado);
+		}
+		else {
+			imprimir("Usted erró, el número pensado era mayor que tu número " + numeroPensado)
+		}
+	};
+	
+
+
+</script>
+
+
